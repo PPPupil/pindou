@@ -179,10 +179,18 @@ class MainWindow(QMainWindow):
         if self.project is None:
             return
         viewport = self.scroll_area.viewport().size()
-        horizontal_ratio = viewport.width() / (
+        available_width = max(
+            1,
+            viewport.width() - 2 * CanvasWidget.MAX_COORDINATE_MARGIN,
+        )
+        available_height = max(
+            1,
+            viewport.height() - 2 * CanvasWidget.MAX_COORDINATE_MARGIN,
+        )
+        horizontal_ratio = available_width / (
             self.project.width * CanvasWidget.BASE_CELL_SIZE
         )
-        vertical_ratio = viewport.height() / (
+        vertical_ratio = available_height / (
             self.project.height * CanvasWidget.BASE_CELL_SIZE
         )
         zoom_percent = int(min(horizontal_ratio, vertical_ratio) * 100)
