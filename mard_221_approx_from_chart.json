@@ -1,0 +1,2453 @@
+{
+  "palette": {
+    "id": "marketplace-221-approx",
+    "displayName": "淘宝主流221色拼豆色卡（图片近似提取）",
+    "version": "0.2.0",
+    "colorSpace": "sRGB",
+    "colorCount": 221,
+    "source": "user-uploaded marketplace chart",
+    "accuracy": "approximate",
+    "notes": [
+      "221个色号依据上传图片逐格整理。",
+      "HEX/RGB由JPEG色卡中的色块环形区域自动取样。",
+      "这些数值是屏幕近似色，不是实物豆的标准测色值。",
+      "适合原型开发；正式颜色匹配建议后续用实物豆和标准光源校正。",
+      "编号按图片原样保存，例如H2、H7；前端可自行格式化成H02、H07。"
+    ]
+  },
+  "colors": [
+    {
+      "code": "H2",
+      "hex": "#F9F9F9",
+      "rgb": [
+        249,
+        249,
+        249
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 1
+    },
+    {
+      "code": "F3",
+      "hex": "#E04846",
+      "rgb": [
+        224,
+        72,
+        70
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 2
+    },
+    {
+      "code": "A21",
+      "hex": "#F5E299",
+      "rgb": [
+        245,
+        226,
+        153
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B27",
+      "hex": "#CDDEB4",
+      "rgb": [
+        205,
+        222,
+        180
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 4
+    },
+    {
+      "code": "C19",
+      "hex": "#2A849B",
+      "rgb": [
+        42,
+        132,
+        155
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D17",
+      "hex": "#CCD4E7",
+      "rgb": [
+        204,
+        212,
+        231
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 6
+    },
+    {
+      "code": "F14",
+      "hex": "#EEA3B1",
+      "rgb": [
+        238,
+        163,
+        177
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 7
+    },
+    {
+      "code": "F17",
+      "hex": "#DE9A7C",
+      "rgb": [
+        222,
+        154,
+        124
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G18",
+      "hex": "#F5DFD1",
+      "rgb": [
+        245,
+        223,
+        209
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 9
+    },
+    {
+      "code": "H3",
+      "hex": "#B4B1B6",
+      "rgb": [
+        180,
+        177,
+        182
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A10",
+      "hex": "#E17D3D",
+      "rgb": [
+        225,
+        125,
+        61
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B4",
+      "hex": "#75B43E",
+      "rgb": [
+        117,
+        180,
+        62
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C13",
+      "hex": "#D3E5EE",
+      "rgb": [
+        211,
+        229,
+        238
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 13
+    },
+    {
+      "code": "C23",
+      "hex": "#CDDEEE",
+      "rgb": [
+        205,
+        222,
+        238
+      ],
+      "sourceRow": 1,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H1",
+      "hex": "#FCFCFC",
+      "rgb": [
+        252,
+        252,
+        252
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 1,
+      "transparent": true,
+      "note": "透明色；hex/rgb仅表示色卡底图中的显示近似值"
+    },
+    {
+      "code": "F13",
+      "hex": "#DA5549",
+      "rgb": [
+        218,
+        85,
+        73
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 2
+    },
+    {
+      "code": "A22",
+      "hex": "#F3E77A",
+      "rgb": [
+        243,
+        231,
+        122
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B28",
+      "hex": "#A7CEB2",
+      "rgb": [
+        167,
+        206,
+        178
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 4
+    },
+    {
+      "code": "C7",
+      "hex": "#4777AF",
+      "rgb": [
+        71,
+        119,
+        175
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D11",
+      "hex": "#BAB9D4",
+      "rgb": [
+        186,
+        185,
+        212
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 6
+    },
+    {
+      "code": "F1",
+      "hex": "#EB9184",
+      "rgb": [
+        235,
+        145,
+        132
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 7
+    },
+    {
+      "code": "F18",
+      "hex": "#D2804E",
+      "rgb": [
+        210,
+        128,
+        78
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G1",
+      "hex": "#F6E0D1",
+      "rgb": [
+        246,
+        224,
+        209
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 9
+    },
+    {
+      "code": "H15",
+      "hex": "#9AA19E",
+      "rgb": [
+        154,
+        161,
+        158
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A7",
+      "hex": "#ED8755",
+      "rgb": [
+        237,
+        135,
+        85
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B5",
+      "hex": "#6BAD52",
+      "rgb": [
+        107,
+        173,
+        82
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C14",
+      "hex": "#DDEAEF",
+      "rgb": [
+        221,
+        234,
+        239
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 13
+    },
+    {
+      "code": "C24",
+      "hex": "#87BEDE",
+      "rgb": [
+        135,
+        190,
+        222
+      ],
+      "sourceRow": 2,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H18",
+      "hex": "#F5F5F5",
+      "rgb": [
+        245,
+        245,
+        245
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 1
+    },
+    {
+      "code": "A14",
+      "hex": "#DF5245",
+      "rgb": [
+        223,
+        82,
+        69
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 2
+    },
+    {
+      "code": "A23",
+      "hex": "#E2C4BC",
+      "rgb": [
+        226,
+        196,
+        188
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B29",
+      "hex": "#BFCF5A",
+      "rgb": [
+        191,
+        207,
+        90
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 4
+    },
+    {
+      "code": "C8",
+      "hex": "#335A9A",
+      "rgb": [
+        51,
+        90,
+        154
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D1",
+      "hex": "#B3B7D6",
+      "rgb": [
+        179,
+        183,
+        214
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 6
+    },
+    {
+      "code": "A12",
+      "hex": "#E89A75",
+      "rgb": [
+        232,
+        154,
+        117
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 7
+    },
+    {
+      "code": "F19",
+      "hex": "#BA4A4E",
+      "rgb": [
+        186,
+        74,
+        78
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G15",
+      "hex": "#F5F0E9",
+      "rgb": [
+        245,
+        240,
+        233
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 9
+    },
+    {
+      "code": "H4",
+      "hex": "#868486",
+      "rgb": [
+        134,
+        132,
+        134
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A2",
+      "hex": "#F7F8D9",
+      "rgb": [
+        247,
+        248,
+        217
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B8",
+      "hex": "#1C8F4C",
+      "rgb": [
+        28,
+        143,
+        76
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C2",
+      "hex": "#BDDEE3",
+      "rgb": [
+        189,
+        222,
+        227
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 13
+    },
+    {
+      "code": "C25",
+      "hex": "#B0D5D8",
+      "rgb": [
+        176,
+        213,
+        216
+      ],
+      "sourceRow": 3,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H12",
+      "hex": "#F6F3EE",
+      "rgb": [
+        246,
+        243,
+        238
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 1
+    },
+    {
+      "code": "F4",
+      "hex": "#DE313A",
+      "rgb": [
+        222,
+        49,
+        58
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 2
+    },
+    {
+      "code": "A24",
+      "hex": "#F3EFA6",
+      "rgb": [
+        243,
+        239,
+        166
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B30",
+      "hex": "#E4E9B8",
+      "rgb": [
+        228,
+        233,
+        184
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 4
+    },
+    {
+      "code": "D3",
+      "hex": "#3B539C",
+      "rgb": [
+        59,
+        83,
+        156
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D2",
+      "hex": "#888FB8",
+      "rgb": [
+        136,
+        143,
+        184
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 6
+    },
+    {
+      "code": "A19",
+      "hex": "#E37778",
+      "rgb": [
+        227,
+        119,
+        120
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 7
+    },
+    {
+      "code": "F20",
+      "hex": "#C4939A",
+      "rgb": [
+        196,
+        147,
+        154
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G16",
+      "hex": "#EDDAC0",
+      "rgb": [
+        237,
+        218,
+        192
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 9
+    },
+    {
+      "code": "H5",
+      "hex": "#4A474B",
+      "rgb": [
+        74,
+        71,
+        75
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A1",
+      "hex": "#FAF6C6",
+      "rgb": [
+        250,
+        246,
+        198
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B12",
+      "hex": "#19683E",
+      "rgb": [
+        25,
+        104,
+        62
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C3",
+      "hex": "#A9D7E7",
+      "rgb": [
+        169,
+        215,
+        231
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 13
+    },
+    {
+      "code": "C26",
+      "hex": "#3CA6CC",
+      "rgb": [
+        60,
+        166,
+        204
+      ],
+      "sourceRow": 4,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H19",
+      "hex": "#EFECDF",
+      "rgb": [
+        239,
+        236,
+        223
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 1
+    },
+    {
+      "code": "F5",
+      "hex": "#DB2330",
+      "rgb": [
+        219,
+        35,
+        48
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 2
+    },
+    {
+      "code": "A25",
+      "hex": "#F0D486",
+      "rgb": [
+        240,
+        212,
+        134
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B31",
+      "hex": "#B8D095",
+      "rgb": [
+        184,
+        208,
+        149
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 4
+    },
+    {
+      "code": "C9",
+      "hex": "#43569B",
+      "rgb": [
+        67,
+        86,
+        155
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D19",
+      "hex": "#D5C4D1",
+      "rgb": [
+        213,
+        196,
+        209
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E17",
+      "hex": "#F2E1E7",
+      "rgb": [
+        242,
+        225,
+        231
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 7
+    },
+    {
+      "code": "F21",
+      "hex": "#EEB6C6",
+      "rgb": [
+        238,
+        182,
+        198
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G2",
+      "hex": "#F0C0B0",
+      "rgb": [
+        240,
+        192,
+        176
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 9
+    },
+    {
+      "code": "H6",
+      "hex": "#2E2A2D",
+      "rgb": [
+        46,
+        42,
+        45
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A16",
+      "hex": "#F4F29D",
+      "rgb": [
+        244,
+        242,
+        157
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B17",
+      "hex": "#9BA941",
+      "rgb": [
+        155,
+        169,
+        65
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C4",
+      "hex": "#5ABCE0",
+      "rgb": [
+        90,
+        188,
+        224
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 13
+    },
+    {
+      "code": "C27",
+      "hex": "#D8DCE4",
+      "rgb": [
+        216,
+        220,
+        228
+      ],
+      "sourceRow": 5,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H13",
+      "hex": "#F0E9D3",
+      "rgb": [
+        240,
+        233,
+        211
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 1
+    },
+    {
+      "code": "F15",
+      "hex": "#C62D35",
+      "rgb": [
+        198,
+        45,
+        53
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 2
+    },
+    {
+      "code": "A26",
+      "hex": "#F3C03F",
+      "rgb": [
+        243,
+        192,
+        63
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B32",
+      "hex": "#9FAA5D",
+      "rgb": [
+        159,
+        170,
+        93
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 4
+    },
+    {
+      "code": "C20",
+      "hex": "#246AA6",
+      "rgb": [
+        36,
+        106,
+        166
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D12",
+      "hex": "#D2A2C1",
+      "rgb": [
+        210,
+        162,
+        193
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E8",
+      "hex": "#EFDBE8",
+      "rgb": [
+        239,
+        219,
+        232
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 7
+    },
+    {
+      "code": "F22",
+      "hex": "#EEBECE",
+      "rgb": [
+        238,
+        190,
+        206
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G3",
+      "hex": "#EBC5AA",
+      "rgb": [
+        235,
+        197,
+        170
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 9
+    },
+    {
+      "code": "H16",
+      "hex": "#282422",
+      "rgb": [
+        40,
+        36,
+        34
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A15",
+      "hex": "#F2EB63",
+      "rgb": [
+        242,
+        235,
+        99
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B11",
+      "hex": "#627247",
+      "rgb": [
+        98,
+        114,
+        71
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C21",
+      "hex": "#C6D7EA",
+      "rgb": [
+        198,
+        215,
+        234
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 13
+    },
+    {
+      "code": "C28",
+      "hex": "#BDCDDE",
+      "rgb": [
+        189,
+        205,
+        222
+      ],
+      "sourceRow": 6,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H17",
+      "hex": "#EDECEC",
+      "rgb": [
+        237,
+        236,
+        236
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 1
+    },
+    {
+      "code": "F8",
+      "hex": "#B22E35",
+      "rgb": [
+        178,
+        46,
+        53
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 2
+    },
+    {
+      "code": "B24",
+      "hex": "#E8E8A5",
+      "rgb": [
+        232,
+        232,
+        165
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 3
+    },
+    {
+      "code": "C1",
+      "hex": "#EFF2ED",
+      "rgb": [
+        239,
+        242,
+        237
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 4
+    },
+    {
+      "code": "C16",
+      "hex": "#225699",
+      "rgb": [
+        34,
+        86,
+        153
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D6",
+      "hex": "#9685AF",
+      "rgb": [
+        150,
+        133,
+        175
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E18",
+      "hex": "#E8C3D7",
+      "rgb": [
+        232,
+        195,
+        215
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 7
+    },
+    {
+      "code": "F23",
+      "hex": "#E07869",
+      "rgb": [
+        224,
+        120,
+        105
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G11",
+      "hex": "#DAC592",
+      "rgb": [
+        218,
+        197,
+        146
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 9
+    },
+    {
+      "code": "H7",
+      "hex": "#20201F",
+      "rgb": [
+        32,
+        32,
+        31
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A3",
+      "hex": "#F8EF8E",
+      "rgb": [
+        248,
+        239,
+        142
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B15",
+      "hex": "#364B3B",
+      "rgb": [
+        54,
+        75,
+        59
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C5",
+      "hex": "#2BA3DB",
+      "rgb": [
+        43,
+        163,
+        219
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 13
+    },
+    {
+      "code": "P14",
+      "hex": "#3D488A",
+      "rgb": [
+        61,
+        72,
+        138
+      ],
+      "sourceRow": 7,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H9",
+      "hex": "#EDEDED",
+      "rgb": [
+        237,
+        237,
+        237
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 1
+    },
+    {
+      "code": "F7",
+      "hex": "#922A3C",
+      "rgb": [
+        146,
+        42,
+        60
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 2
+    },
+    {
+      "code": "B13",
+      "hex": "#CCD984",
+      "rgb": [
+        204,
+        217,
+        132
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B20",
+      "hex": "#CADCCD",
+      "rgb": [
+        202,
+        220,
+        205
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 4
+    },
+    {
+      "code": "C17",
+      "hex": "#58B9DA",
+      "rgb": [
+        88,
+        185,
+        218
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D5",
+      "hex": "#965698",
+      "rgb": [
+        150,
+        86,
+        152
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E19",
+      "hex": "#EEB4CE",
+      "rgb": [
+        238,
+        180,
+        206
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 7
+    },
+    {
+      "code": "F24",
+      "hex": "#DE96A6",
+      "rgb": [
+        222,
+        150,
+        166
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G4",
+      "hex": "#D9B080",
+      "rgb": [
+        217,
+        176,
+        128
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 9
+    },
+    {
+      "code": "H20",
+      "hex": "#9A989D",
+      "rgb": [
+        154,
+        152,
+        157
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A17",
+      "hex": "#F5DF6D",
+      "rgb": [
+        245,
+        223,
+        109
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B9",
+      "hex": "#2D4C39",
+      "rgb": [
+        45,
+        76,
+        57
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C6",
+      "hex": "#65A3D1",
+      "rgb": [
+        101,
+        163,
+        209
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 13
+    },
+    {
+      "code": "D16",
+      "hex": "#E2E1E5",
+      "rgb": [
+        226,
+        225,
+        229
+      ],
+      "sourceRow": 8,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H8",
+      "hex": "#E2D8DB",
+      "rgb": [
+        226,
+        216,
+        219
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 1
+    },
+    {
+      "code": "A11",
+      "hex": "#F7DA9A",
+      "rgb": [
+        247,
+        218,
+        154
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 2
+    },
+    {
+      "code": "B16",
+      "hex": "#C8DDA0",
+      "rgb": [
+        200,
+        221,
+        160
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B10",
+      "hex": "#9CCDC1",
+      "rgb": [
+        156,
+        205,
+        193
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 4
+    },
+    {
+      "code": "D4",
+      "hex": "#353D68",
+      "rgb": [
+        53,
+        61,
+        104
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D18",
+      "hex": "#9367A0",
+      "rgb": [
+        147,
+        103,
+        160
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E2",
+      "hex": "#F2BED7",
+      "rgb": [
+        242,
+        190,
+        215
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 7
+    },
+    {
+      "code": "F25",
+      "hex": "#DE4E54",
+      "rgb": [
+        222,
+        78,
+        84
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G9",
+      "hex": "#E5B886",
+      "rgb": [
+        229,
+        184,
+        134
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 9
+    },
+    {
+      "code": "H23",
+      "hex": "#979895",
+      "rgb": [
+        151,
+        152,
+        149
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A4",
+      "hex": "#F6E95C",
+      "rgb": [
+        246,
+        233,
+        92
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B23",
+      "hex": "#2F372F",
+      "rgb": [
+        47,
+        55,
+        47
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C10",
+      "hex": "#44B6D6",
+      "rgb": [
+        68,
+        182,
+        214
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 13
+    },
+    {
+      "code": "D23",
+      "hex": "#E4DAE3",
+      "rgb": [
+        228,
+        218,
+        227
+      ],
+      "sourceRow": 9,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H10",
+      "hex": "#E9E9E9",
+      "rgb": [
+        233,
+        233,
+        233
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 1
+    },
+    {
+      "code": "A18",
+      "hex": "#ECB97F",
+      "rgb": [
+        236,
+        185,
+        127
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 2
+    },
+    {
+      "code": "B3",
+      "hex": "#A9CC7C",
+      "rgb": [
+        169,
+        204,
+        124
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B6",
+      "hex": "#80BC9E",
+      "rgb": [
+        128,
+        188,
+        158
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 4
+    },
+    {
+      "code": "D22",
+      "hex": "#3E3E87",
+      "rgb": [
+        62,
+        62,
+        135
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D13",
+      "hex": "#AA358B",
+      "rgb": [
+        170,
+        53,
+        139
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E12",
+      "hex": "#E18DAF",
+      "rgb": [
+        225,
+        141,
+        175
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 7
+    },
+    {
+      "code": "M1",
+      "hex": "#BEC2BB",
+      "rgb": [
+        190,
+        194,
+        187
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G5",
+      "hex": "#E2AC4D",
+      "rgb": [
+        226,
+        172,
+        77
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 9
+    },
+    {
+      "code": "F12",
+      "hex": "#DB4E6B",
+      "rgb": [
+        219,
+        78,
+        107
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A8",
+      "hex": "#F7D352",
+      "rgb": [
+        247,
+        211,
+        82
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B25",
+      "hex": "#5B8874",
+      "rgb": [
+        91,
+        136,
+        116
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C11",
+      "hex": "#62B8C4",
+      "rgb": [
+        98,
+        184,
+        196
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 13
+    },
+    {
+      "code": "D8",
+      "hex": "#DFD5E0",
+      "rgb": [
+        223,
+        213,
+        224
+      ],
+      "sourceRow": 10,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H21",
+      "hex": "#F6F6E9",
+      "rgb": [
+        246,
+        246,
+        233
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 1
+    },
+    {
+      "code": "A5",
+      "hex": "#F2D244",
+      "rgb": [
+        242,
+        210,
+        68
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 2
+    },
+    {
+      "code": "B1",
+      "hex": "#DDE048",
+      "rgb": [
+        221,
+        224,
+        72
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B7",
+      "hex": "#42A57E",
+      "rgb": [
+        66,
+        165,
+        126
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 4
+    },
+    {
+      "code": "D15",
+      "hex": "#3D3C76",
+      "rgb": [
+        61,
+        60,
+        118
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D7",
+      "hex": "#7D5E99",
+      "rgb": [
+        125,
+        94,
+        153
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E3",
+      "hex": "#E7B7CD",
+      "rgb": [
+        231,
+        183,
+        205
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 7
+    },
+    {
+      "code": "M2",
+      "hex": "#92A28E",
+      "rgb": [
+        146,
+        162,
+        142
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G6",
+      "hex": "#DF9B28",
+      "rgb": [
+        223,
+        155,
+        40
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 9
+    },
+    {
+      "code": "F2",
+      "hex": "#DE424A",
+      "rgb": [
+        222,
+        66,
+        74
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 10
+    },
+    {
+      "code": "A20",
+      "hex": "#F2CF6E",
+      "rgb": [
+        242,
+        207,
+        110
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 11
+    },
+    {
+      "code": "B26",
+      "hex": "#907E47",
+      "rgb": [
+        144,
+        126,
+        71
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 12
+    },
+    {
+      "code": "C15",
+      "hex": "#46AEB3",
+      "rgb": [
+        70,
+        174,
+        179
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 13
+    },
+    {
+      "code": "D9",
+      "hex": "#C8BDCF",
+      "rgb": [
+        200,
+        189,
+        207
+      ],
+      "sourceRow": 11,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H22",
+      "hex": "#CBCACD",
+      "rgb": [
+        203,
+        202,
+        205
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 1
+    },
+    {
+      "code": "A13",
+      "hex": "#F0BD6E",
+      "rgb": [
+        240,
+        189,
+        110
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 2
+    },
+    {
+      "code": "B14",
+      "hex": "#B2C954",
+      "rgb": [
+        178,
+        201,
+        84
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B19",
+      "hex": "#36A884",
+      "rgb": [
+        54,
+        168,
+        132
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 4
+    },
+    {
+      "code": "C12",
+      "hex": "#313742",
+      "rgb": [
+        49,
+        55,
+        66
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D14",
+      "hex": "#863F90",
+      "rgb": [
+        134,
+        63,
+        144
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E9",
+      "hex": "#CA7AAC",
+      "rgb": [
+        202,
+        122,
+        172
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 7
+    },
+    {
+      "code": "M3",
+      "hex": "#738184",
+      "rgb": [
+        115,
+        129,
+        132
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G19",
+      "hex": "#D2793A",
+      "rgb": [
+        210,
+        121,
+        58
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 9
+    },
+    {
+      "code": "E15",
+      "hex": "#F0C7CE",
+      "rgb": [
+        240,
+        199,
+        206
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 10
+    },
+    {
+      "code": "E22",
+      "hex": "#B0849C",
+      "rgb": [
+        176,
+        132,
+        156
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 11
+    },
+    {
+      "code": "M13",
+      "hex": "#D09674",
+      "rgb": [
+        208,
+        150,
+        116
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 12
+    },
+    {
+      "code": "G8",
+      "hex": "#783E3D",
+      "rgb": [
+        120,
+        62,
+        61
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 13
+    },
+    {
+      "code": "G20",
+      "hex": "#A7443F",
+      "rgb": [
+        167,
+        68,
+        63
+      ],
+      "sourceRow": 12,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H11",
+      "hex": "#CECECE",
+      "rgb": [
+        206,
+        206,
+        206
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 1
+    },
+    {
+      "code": "A6",
+      "hex": "#EDA554",
+      "rgb": [
+        237,
+        165,
+        84
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 2
+    },
+    {
+      "code": "B18",
+      "hex": "#DDDD56",
+      "rgb": [
+        221,
+        221,
+        86
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B21",
+      "hex": "#1D6664",
+      "rgb": [
+        29,
+        102,
+        100
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 4
+    },
+    {
+      "code": "C18",
+      "hex": "#2D383E",
+      "rgb": [
+        45,
+        56,
+        62
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D20",
+      "hex": "#884D90",
+      "rgb": [
+        136,
+        77,
+        144
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E5",
+      "hex": "#DD5B91",
+      "rgb": [
+        221,
+        91,
+        145
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 7
+    },
+    {
+      "code": "M4",
+      "hex": "#DDD2BF",
+      "rgb": [
+        221,
+        210,
+        191
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G12",
+      "hex": "#EEC095",
+      "rgb": [
+        238,
+        192,
+        149
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 9
+    },
+    {
+      "code": "E14",
+      "hex": "#EFCCC3",
+      "rgb": [
+        239,
+        204,
+        195
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 10
+    },
+    {
+      "code": "E23",
+      "hex": "#8E7987",
+      "rgb": [
+        142,
+        121,
+        135
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 11
+    },
+    {
+      "code": "M14",
+      "hex": "#CA7672",
+      "rgb": [
+        202,
+        118,
+        114
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 12
+    },
+    {
+      "code": "F11",
+      "hex": "#5C2B32",
+      "rgb": [
+        92,
+        43,
+        50
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 13
+    },
+    {
+      "code": "F10",
+      "hex": "#88483A",
+      "rgb": [
+        136,
+        72,
+        58
+      ],
+      "sourceRow": 13,
+      "sourceColumn": 14
+    },
+    {
+      "code": "H14",
+      "hex": "#D0D1CF",
+      "rgb": [
+        208,
+        209,
+        207
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 1
+    },
+    {
+      "code": "A9",
+      "hex": "#EF9366",
+      "rgb": [
+        239,
+        147,
+        102
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 2
+    },
+    {
+      "code": "B2",
+      "hex": "#84B63F",
+      "rgb": [
+        132,
+        182,
+        63
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 3
+    },
+    {
+      "code": "B22",
+      "hex": "#243A40",
+      "rgb": [
+        36,
+        58,
+        64
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 4
+    },
+    {
+      "code": "C22",
+      "hex": "#68AFB7",
+      "rgb": [
+        104,
+        175,
+        183
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D21",
+      "hex": "#903386",
+      "rgb": [
+        144,
+        51,
+        134
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 6
+    },
+    {
+      "code": "F9",
+      "hex": "#D96A7C",
+      "rgb": [
+        217,
+        106,
+        124
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 7
+    },
+    {
+      "code": "M5",
+      "hex": "#D0C9AD",
+      "rgb": [
+        208,
+        201,
+        173
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G13",
+      "hex": "#BA704D",
+      "rgb": [
+        186,
+        112,
+        77
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 9
+    },
+    {
+      "code": "F16",
+      "hex": "#F1BDAC",
+      "rgb": [
+        241,
+        189,
+        172
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 10
+    },
+    {
+      "code": "E24",
+      "hex": "#D8BCD3",
+      "rgb": [
+        216,
+        188,
+        211
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 11
+    },
+    {
+      "code": "M15",
+      "hex": "#7C7F7F",
+      "rgb": [
+        124,
+        127,
+        127
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 12
+    },
+    {
+      "code": "G21",
+      "hex": "#B7895D",
+      "rgb": [
+        183,
+        137,
+        93
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 13
+    },
+    {
+      "code": "F6",
+      "hex": "#923638",
+      "rgb": [
+        146,
+        54,
+        56
+      ],
+      "sourceRow": 14,
+      "sourceColumn": 14
+    },
+    {
+      "code": "E13",
+      "hex": "#B42F6B",
+      "rgb": [
+        180,
+        47,
+        107
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 1
+    },
+    {
+      "code": "D24",
+      "hex": "#7F88B9",
+      "rgb": [
+        127,
+        136,
+        185
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 2
+    },
+    {
+      "code": "E6",
+      "hex": "#DC426F",
+      "rgb": [
+        220,
+        66,
+        111
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 3
+    },
+    {
+      "code": "M7",
+      "hex": "#B0A39F",
+      "rgb": [
+        176,
+        163,
+        159
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 4
+    },
+    {
+      "code": "G17",
+      "hex": "#7B5553",
+      "rgb": [
+        123,
+        85,
+        83
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 5
+    },
+    {
+      "code": "D10",
+      "hex": "#37313D",
+      "rgb": [
+        55,
+        49,
+        61
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E4",
+      "hex": "#DC6396",
+      "rgb": [
+        220,
+        99,
+        150
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 7
+    },
+    {
+      "code": "M6",
+      "hex": "#ABA58A",
+      "rgb": [
+        171,
+        165,
+        138
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 8
+    },
+    {
+      "code": "G10",
+      "hex": "#D89049",
+      "rgb": [
+        216,
+        144,
+        73
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 9
+    },
+    {
+      "code": "D25",
+      "hex": "#505D9C",
+      "rgb": [
+        80,
+        93,
+        156
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 10
+    },
+    {
+      "code": "E10",
+      "hex": "#D14184",
+      "rgb": [
+        209,
+        65,
+        132
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 11
+    },
+    {
+      "code": "M8",
+      "hex": "#B3898F",
+      "rgb": [
+        179,
+        137,
+        143
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 12
+    },
+    {
+      "code": "G14",
+      "hex": "#8F675A",
+      "rgb": [
+        143,
+        103,
+        90
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 13
+    },
+    {
+      "code": "D26",
+      "hex": "#D3C7D7",
+      "rgb": [
+        211,
+        199,
+        215
+      ],
+      "sourceRow": 15,
+      "sourceColumn": 14
+    },
+    {
+      "code": "M9",
+      "hex": "#A28C6E",
+      "rgb": [
+        162,
+        140,
+        110
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 1
+    },
+    {
+      "code": "G7",
+      "hex": "#975E46",
+      "rgb": [
+        151,
+        94,
+        70
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 2
+    },
+    {
+      "code": "E16",
+      "hex": "#F1F1EF",
+      "rgb": [
+        241,
+        241,
+        239
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 3
+    },
+    {
+      "code": "E7",
+      "hex": "#C6346D",
+      "rgb": [
+        198,
+        52,
+        109
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 4
+    },
+    {
+      "code": "M10",
+      "hex": "#C9B6C2",
+      "rgb": [
+        201,
+        182,
+        194
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 5
+    },
+    {
+      "code": "E11",
+      "hex": "#F1DBD9",
+      "rgb": [
+        241,
+        219,
+        217
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 6
+    },
+    {
+      "code": "E20",
+      "hex": "#D1C5CD",
+      "rgb": [
+        209,
+        197,
+        205
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 7
+    },
+    {
+      "code": "M11",
+      "hex": "#A07993",
+      "rgb": [
+        160,
+        121,
+        147
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 8
+    },
+    {
+      "code": "E1",
+      "hex": "#F7D4D6",
+      "rgb": [
+        247,
+        212,
+        214
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 9
+    },
+    {
+      "code": "E21",
+      "hex": "#B79AA0",
+      "rgb": [
+        183,
+        154,
+        160
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 10
+    },
+    {
+      "code": "M12",
+      "hex": "#624950",
+      "rgb": [
+        98,
+        73,
+        80
+      ],
+      "sourceRow": 16,
+      "sourceColumn": 11
+    }
+  ]
+}

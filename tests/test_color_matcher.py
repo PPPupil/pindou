@@ -10,3 +10,14 @@ def test_exact_color_is_matched() -> None:
     assert matcher.find_nearest((0, 0, 0)) == black
     assert matcher.find_nearest((250, 250, 250)) == white
 
+
+def test_transparent_color_is_not_used_for_opaque_image_matching() -> None:
+    transparent_white = BeadColor(
+        "H1", "透明", (252, 252, 252), transparent=True
+    )
+    opaque_white = BeadColor("H2", "白", (249, 249, 249))
+
+    matcher = ColorMatcher([transparent_white, opaque_white])
+
+    assert matcher.find_nearest((255, 255, 255)).code == "H2"
+

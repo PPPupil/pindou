@@ -10,10 +10,16 @@ from app.core.project import BeadColor
 class ColorMatcher:
     """第一版使用 RGB 平方距离；后续可替换为 Lab/CIEDE2000。"""
 
-    def __init__(self, palette: Iterable[BeadColor]) -> None:
-        self.palette = tuple(palette)
+    def __init__(
+        self,
+        palette: Iterable[BeadColor],
+        include_transparent: bool = False,
+    ) -> None:
+        self.palette = tuple(
+            color for color in palette if include_transparent or not color.transparent
+        )
         if not self.palette:
-            raise ValueError("色板不能为空")
+            raise ValueError("色板中没有可用于自动匹配的不透明颜色")
 
     def find_nearest(self, rgb: tuple[int, int, int]) -> BeadColor:
         return min(self.palette, key=lambda color: self._distance_squared(rgb, color.rgb))
