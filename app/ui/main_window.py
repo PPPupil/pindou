@@ -21,7 +21,7 @@ from PySide6.QtWidgets import (
 )
 
 from app.core.converter import BeadConverter
-from app.core.image_processor import ResizeMode
+from app.core.image_processor import ImageStyle, ResizeMode
 from app.core.project import BeadProject
 from app.services.exporter import export_png
 from app.services.palette_loader import Palette, load_palette
@@ -120,16 +120,35 @@ class MainWindow(QMainWindow):
         width: int,
         height: int,
         mode: ResizeMode,
+        palette_level: int = 0,
+        image_style: ImageStyle = "auto",
+        color_limit: int = 0,
     ) -> None:
         try:
             converter = BeadConverter(self.palette.colors, self.palette.brand)
-            self.project = converter.convert(image_path, width, height, mode)
+            self.project = converter.convert(
+                image_path,
+                width,
+                height,
+                mode,
+                palette_level,
+                image_style,
+                color_limit,
+            )
             self.canvas.set_project(self.project, self.palette.colors)
+            self.palette_panel.set_palette(
+                self.palette,
+                self.project.color_counts().keys(),
+            )
             self.statistics_panel.set_project(self.project, self.palette.colors)
             QTimer.singleShot(0, self._fit_preview)
             mode_text = "保持比例并补白" if mode == "contain" else "居中裁切"
+            style_text = "卡通优化" if self.project.image_style == "cartoon" else "照片"
+            used_color_count = len(self.project.color_counts())
             self.statusBar().showMessage(
-                f"已生成 {width} × {height}，共 {width * height} 颗豆（{mode_text}）"
+                f"已生成 {width} × {height}，共 {width * height} 颗豆，"
+                f"使用 {used_color_count} 色（{mode_text}，{style_text}，"
+                f"{self.project.palette_level} 色卡，用色上限 {self.project.color_limit}）"
             )
         except Exception as error:  # UI 边界统一显示可读错误
             QMessageBox.critical(self, "生成失败", str(error))

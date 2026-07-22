@@ -4,11 +4,12 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 
+from app.core.color_space import lab_distance_squared, rgb_to_lab
 from app.core.project import BeadColor
 
 
 class ColorMatcher:
-    """第一版使用 RGB 平方距离；后续可替换为 Lab/CIEDE2000。"""
+    """使用 CIE Lab 距离把图像颜色匹配到最接近的实体拼豆色。"""
 
     def __init__(
         self,
@@ -20,11 +21,14 @@ class ColorMatcher:
         )
         if not self.palette:
             raise ValueError("色板中没有可用于自动匹配的不透明颜色")
+        self._palette_lab = tuple(
+            (color, rgb_to_lab(color.rgb)) for color in self.palette
+        )
 
     def find_nearest(self, rgb: tuple[int, int, int]) -> BeadColor:
-        return min(self.palette, key=lambda color: self._distance_squared(rgb, color.rgb))
-
-    @staticmethod
-    def _distance_squared(left: tuple[int, int, int], right: tuple[int, int, int]) -> int:
-        return sum((a - b) ** 2 for a, b in zip(left, right, strict=True))
+        target_lab = rgb_to_lab(rgb)
+        return min(
+            self._palette_lab,
+            key=lambda item: lab_distance_squared(target_lab, item[1]),
+        )[0]
 

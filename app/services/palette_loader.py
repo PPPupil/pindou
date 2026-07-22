@@ -2,11 +2,69 @@
 
 from __future__ import annotations
 
+import colorsys
 import json
 from dataclasses import dataclass
 from pathlib import Path
 
 from app.core.project import BeadColor
+
+
+def approximate_chinese_color_name(
+    rgb: tuple[int, int, int],
+    transparent: bool = False,
+) -> str:
+    """根据 RGB 生成描述性中文色名，不代表品牌官方命名。"""
+    if transparent:
+        return "透明色"
+
+    red, green, blue = (channel / 255 for channel in rgb)
+    hue, saturation, value = colorsys.rgb_to_hsv(red, green, blue)
+    hue_degrees = hue * 360
+
+    if saturation < 0.1:
+        if value >= 0.92:
+            return "白色"
+        if value >= 0.72:
+            return "浅灰色"
+        if value >= 0.45:
+            return "灰色"
+        if value >= 0.2:
+            return "深灰色"
+        return "黑色"
+
+    if 15 <= hue_degrees < 45 and value < 0.65:
+        base_name = "棕色"
+    elif hue_degrees < 15 or hue_degrees >= 345:
+        base_name = "红色"
+    elif hue_degrees < 40:
+        base_name = "橙色"
+    elif hue_degrees < 68:
+        base_name = "黄色"
+    elif hue_degrees < 88:
+        base_name = "黄绿色"
+    elif hue_degrees < 155:
+        base_name = "绿色"
+    elif hue_degrees < 190:
+        base_name = "青色"
+    elif hue_degrees < 220:
+        base_name = "天蓝色"
+    elif hue_degrees < 255:
+        base_name = "蓝色"
+    elif hue_degrees < 290:
+        base_name = "紫色"
+    elif hue_degrees < 335:
+        base_name = "粉色"
+    else:
+        base_name = "玫红色"
+
+    if value <= 0.48:
+        return f"深{base_name}"
+    if value >= 0.88 and saturation <= 0.65:
+        return f"浅{base_name}"
+    if saturation <= 0.28:
+        return f"灰{base_name}"
+    return base_name
 
 
 @dataclass(frozen=True, slots=True)
@@ -27,19 +85,23 @@ def load_palette(path: str | Path) -> Palette:
         data = json.load(file)
 
     metadata = data.get("palette", {})
-    colors = [
-        BeadColor(
-            code=item["code"],
-            name=item.get("name", item["code"]),
-            rgb=tuple(item["rgb"]),
-            hex_value=item.get("hex", ""),
-            source_row=item.get("sourceRow"),
-            source_column=item.get("sourceColumn"),
-            transparent=bool(item.get("transparent", False)),
-            note=item.get("note", ""),
+    colors = []
+    for item in data["colors"]:
+        rgb = tuple(item["rgb"])
+        transparent = bool(item.get("transparent", False))
+        colors.append(
+            BeadColor(
+                code=item["code"],
+                name=item.get("name")
+                or approximate_chinese_color_name(rgb, transparent),
+                rgb=rgb,
+                hex_value=item.get("hex", ""),
+                source_row=item.get("sourceRow"),
+                source_column=item.get("sourceColumn"),
+                transparent=transparent,
+                note=item.get("note", ""),
+            )
         )
-        for item in data["colors"]
-    ]
     if not colors:
         raise ValueError("色板至少需要一种颜色")
     declared_count = metadata.get("colorCount")

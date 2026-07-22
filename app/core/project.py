@@ -4,6 +4,16 @@ from __future__ import annotations
 
 from collections import Counter
 from dataclasses import dataclass, field
+import re
+
+
+def color_code_sort_key(code: str) -> tuple[tuple[int, str | int], ...]:
+    """按字母和数字自然排序，使 A2 排在 A10 前面。"""
+    return tuple(
+        (1, int(part)) if part.isdigit() else (0, part.casefold())
+        for part in re.split(r"(\d+)", code)
+        if part
+    )
 
 
 @dataclass(frozen=True, slots=True)
@@ -39,6 +49,9 @@ class BeadProject:
     grid: list[list[str]] = field(default_factory=list)
     source_image: str | None = None
     palette_name: str = ""
+    palette_level: int = 221
+    image_style: str = "photo"
+    color_limit: int = 0
 
     def __post_init__(self) -> None:
         if self.width <= 0 or self.height <= 0:
