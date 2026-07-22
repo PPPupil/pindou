@@ -9,6 +9,7 @@ from app.core.color_simplifier import (
     merge_small_regions,
     merge_similar_neighbors,
     quantize_image,
+    remove_rare_color_outliers,
     resolve_output_color_limit,
 )
 from app.core.image_processor import ImageStyle, ResizeMode, load_and_resize, resolve_image_style
@@ -30,6 +31,7 @@ class BeadConverter:
         palette_level: int = 221,
         image_style: ImageStyle = "auto",
         color_limit: int = 0,
+        outlier_max_count: int = 1,
     ) -> BeadProject:
         resolved_style = resolve_image_style(image_path, image_style)
         resolved_level = resolve_palette_level(palette_level, width, height)
@@ -76,6 +78,11 @@ class BeadConverter:
                 distance_threshold=18,
                 passes=1,
             )
+        grid, outliers_removed = remove_rare_color_outliers(
+            grid,
+            matcher.palette,
+            max_global_count=outlier_max_count,
+        )
         return BeadProject(
             width=width,
             height=height,
@@ -85,4 +92,5 @@ class BeadConverter:
             palette_level=resolved_level,
             image_style=resolved_style,
             color_limit=resolved_color_limit,
+            outliers_removed=outliers_removed,
         )

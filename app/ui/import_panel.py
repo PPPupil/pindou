@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (
 
 
 class ImportPanel(QWidget):
-    convert_requested = Signal(str, int, int, str, int, str, int)
+    convert_requested = Signal(str, int, int, str, int, str, int, int)
 
     def __init__(self, parent: QWidget | None = None) -> None:
         super().__init__(parent)
@@ -86,6 +86,22 @@ class ImportPanel(QWidget):
         self.custom_color_limit.setToolTip("实际结果不会超过所选色卡中可用的颜色数量。")
         size_form.addRow("自定义用色上限", self.custom_color_limit)
 
+        self.remove_outliers = QCheckBox("启用")
+        self.remove_outliers.setChecked(True)
+        self.remove_outliers.setToolTip(
+            "只清理全图数量很少、与周围主色接近的格子；高反差眼睛和轮廓会保留。"
+        )
+        self.remove_outliers.toggled.connect(self._update_outlier_setting)
+        size_form.addRow("消除异常色点", self.remove_outliers)
+
+        self.outlier_max_count = QSpinBox()
+        self.outlier_max_count.setRange(1, 5)
+        self.outlier_max_count.setValue(1)
+        self.outlier_max_count.setToolTip(
+            "某色号在全图中的用量不超过该值时，才可能被判定为异常点。"
+        )
+        size_form.addRow("异常色最大用量", self.outlier_max_count)
+
         convert_button = QPushButton("生成拼豆图")
         convert_button.clicked.connect(self._request_conversion)
 
@@ -134,7 +150,13 @@ class ImportPanel(QWidget):
                 int(selected_level) if selected_level is not None else 0,
                 str(self.image_style.currentData()),
                 selected_color_limit,
+                self.outlier_max_count.value()
+                if self.remove_outliers.isChecked()
+                else 0,
             )
 
     def _update_custom_color_limit(self, _index: int = -1) -> None:
         self.custom_color_limit.setEnabled(self.color_complexity.currentData() == -1)
+
+    def _update_outlier_setting(self, enabled: bool) -> None:
+        self.outlier_max_count.setEnabled(enabled)

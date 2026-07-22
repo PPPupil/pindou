@@ -52,6 +52,7 @@ class BeadProject:
     palette_level: int = 221
     image_style: str = "photo"
     color_limit: int = 0
+    outliers_removed: int = 0
 
     def __post_init__(self) -> None:
         if self.width <= 0 or self.height <= 0:

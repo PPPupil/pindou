@@ -123,6 +123,7 @@ class MainWindow(QMainWindow):
         palette_level: int = 0,
         image_style: ImageStyle = "auto",
         color_limit: int = 0,
+        outlier_max_count: int = 1,
     ) -> None:
         try:
             converter = BeadConverter(self.palette.colors, self.palette.brand)
@@ -134,6 +135,7 @@ class MainWindow(QMainWindow):
                 palette_level,
                 image_style,
                 color_limit,
+                outlier_max_count,
             )
             self.canvas.set_project(self.project, self.palette.colors)
             self.palette_panel.set_palette(
@@ -148,7 +150,8 @@ class MainWindow(QMainWindow):
             self.statusBar().showMessage(
                 f"已生成 {width} × {height}，共 {width * height} 颗豆，"
                 f"使用 {used_color_count} 色（{mode_text}，{style_text}，"
-                f"{self.project.palette_level} 色卡，用色上限 {self.project.color_limit}）"
+                f"{self.project.palette_level} 色卡，用色上限 {self.project.color_limit}，"
+                f"清理异常点 {self.project.outliers_removed} 个）"
             )
         except Exception as error:  # UI 边界统一显示可读错误
             QMessageBox.critical(self, "生成失败", str(error))

@@ -175,3 +175,75 @@ def merge_small_regions(
                 result[y][x] = replacement
 
     return result
+
+
+def remove_rare_color_outliers(
+    grid: list[list[str]],
+    palette: list[BeadColor] | tuple[BeadColor, ...],
+    max_global_count: int = 1,
+    distance_threshold: float = 22,
+    passes: int = 2,
+) -> tuple[list[list[str]], int]:
+    """清理全图用量很少且与周围主色接近的异常格，保留高反差细节。"""
+    if max_global_count < 0:
+        raise ValueError("异常点最大数量不能小于 0")
+    if not grid or not grid[0] or max_global_count == 0:
+        return [row.copy() for row in grid], 0
+
+    lab_by_code = {color.code: rgb_to_lab(color.rgb) for color in palette}
+    height = len(grid)
+    width = len(grid[0])
+    threshold_squared = distance_threshold**2
+    result = [row.copy() for row in grid]
+    removed_count = 0
+
+    for _ in range(passes):
+        counts = Counter(code for row in result for code in row)
+        rare_codes = {
+            code for code, count in counts.items() if count <= max_global_count
+        }
+        if not rare_codes:
+            break
+
+        source = [row.copy() for row in result]
+        changes: list[tuple[int, int, str]] = []
+        for y in range(height):
+            for x in range(width):
+                current = source[y][x]
+                if current not in rare_codes or current not in lab_by_code:
+                    continue
+
+                neighbors = Counter(
+                    source[neighbor_y][neighbor_x]
+                    for neighbor_y in range(max(0, y - 1), min(height, y + 2))
+                    for neighbor_x in range(max(0, x - 1), min(width, x + 2))
+                    if (neighbor_x, neighbor_y) != (x, y)
+                    and source[neighbor_y][neighbor_x] != current
+                    and source[neighbor_y][neighbor_x] not in rare_codes
+                )
+                candidates = [
+                    (
+                        code,
+                        support,
+                        lab_distance_squared(lab_by_code[current], lab_by_code[code]),
+                    )
+                    for code, support in neighbors.items()
+                    if support >= 2
+                    and code in lab_by_code
+                    and lab_distance_squared(lab_by_code[current], lab_by_code[code])
+                    <= threshold_squared
+                ]
+                if candidates:
+                    replacement = min(
+                        candidates,
+                        key=lambda item: (-item[1], item[2], -counts[item[0]]),
+                    )[0]
+                    changes.append((x, y, replacement))
+
+        if not changes:
+            break
+        for x, y, replacement in changes:
+            result[y][x] = replacement
+        removed_count += len(changes)
+
+    return result, removed_count

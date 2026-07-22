@@ -5,6 +5,7 @@ from app.core.color_simplifier import (
     merge_similar_neighbors,
     merge_small_regions,
     quantize_image,
+    remove_rare_color_outliers,
     resolve_output_color_limit,
 )
 from app.core.project import BeadColor
@@ -65,3 +66,58 @@ def test_small_similar_region_merges_without_erasing_dark_outline() -> None:
 
     assert merged[1][1:3] == ["SKIN", "SKIN"]
     assert merged[2][3] == "LINE"
+
+
+def test_rare_similar_outlier_is_removed_but_dark_detail_is_preserved() -> None:
+    palette = [
+        BeadColor("BASE", "白色", (238, 236, 232)),
+        BeadColor("ODD", "近似白色", (226, 225, 222)),
+        BeadColor("EYE", "黑色", (35, 35, 34)),
+    ]
+    grid = [
+        ["BASE", "BASE", "BASE", "BASE", "BASE"],
+        ["BASE", "ODD", "BASE", "EYE", "BASE"],
+        ["BASE", "BASE", "BASE", "BASE", "BASE"],
+    ]
+
+    cleaned, removed_count = remove_rare_color_outliers(grid, palette)
+
+    assert cleaned[1][1] == "BASE"
+    assert cleaned[1][3] == "EYE"
+    assert removed_count == 1
+
+
+def test_rare_outlier_cleanup_can_be_disabled() -> None:
+    palette = [
+        BeadColor("A", "灰色", (120, 120, 120)),
+        BeadColor("B", "近似灰色", (125, 125, 125)),
+    ]
+    grid = [["A", "A", "A"], ["A", "B", "A"]]
+
+    cleaned, removed_count = remove_rare_color_outliers(
+        grid,
+        palette,
+        max_global_count=0,
+    )
+
+    assert cleaned == grid
+    assert removed_count == 0
+
+
+def test_real_e11_and_e17_singletons_merge_into_neighboring_e8() -> None:
+    palette = [
+        BeadColor("E8", "白色", (239, 219, 232)),
+        BeadColor("E11", "白色", (241, 219, 217)),
+        BeadColor("E17", "白色", (242, 225, 231)),
+    ]
+    grid = [
+        ["E8", "E8", "E8", "E8"],
+        ["E8", "E11", "E8", "E8"],
+        ["E8", "E8", "E17", "E8"],
+        ["E8", "E8", "E8", "E8"],
+    ]
+
+    cleaned, removed_count = remove_rare_color_outliers(grid, palette)
+
+    assert all(code == "E8" for row in cleaned for code in row)
+    assert removed_count == 2
